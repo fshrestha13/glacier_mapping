@@ -1,16 +1,16 @@
 filter_channel: 1
-filter_percentage: 0.5
+filter_percentage: 0.1
 split_method: random_split
 split_ratio: [0.7,0.1,0.2]
 normalization_sample_size: 100
 process_funs:
   normalize:
-    stats_path: "stats_train.json"
+    stats_path: "/mnt/blobfuse/glaciers/pipeline_demo/demo_data/data/processed/slices/stats_train.json"
   impute:
     value: 0
   extract_channel:
     mask_channels: [1]
-    img_channels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    img_channels: [2, 4, 5]
 slice:
   overlap: 6
   size: [512, 512]

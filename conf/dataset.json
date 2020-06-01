@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "displayName": "Hindu Kush Himalaya 2000",
+    "imageryName": "Landsat Imagery",
+    "locationName": null,
+    "id": "hkh2000_landsat"
+  },
+  "dataLayer": {
+    "type": "GLACIER",
+    "path": "data/outputs/outputfull.vrt",
+    "padding": 1100
+  },
+  "basemapLayer": {
+    "initialZoom": 10,
+    "url": "data/outputs/{z}/{x}/{-y}.png",
+    "initialLocation": [30.3090779, 82.8789515],
+    "args": {
+      "attribution": "Georeferenced Image",
+      "maxNativeZoom": 10,
+      "maxZoom": 10,
+      "minZoom": 10
+    },
+    "bounds": null
+  },
+  "shapeLayers": [
+    {
+      "shapesFn": "data/shapes/hkh.geojson",
+      "zoneNameId": "HKH",
+      "name": "Area Boundaries"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Background",
+      "color": "#0000FF",
+      "count": 0
+    },
+    {
+      "name": "Ice",
+      "color": "#008000",
+      "count": 0
+    },
+    {
+      "name": "Debris",
+      "color": "#80FF80",
+      "count": 0
+    }
+  ]
+}

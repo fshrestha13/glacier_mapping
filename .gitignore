@@ -4,7 +4,7 @@
 *.zip
 *.png
 *pycache*
-data/
+glacier_mapping/data/
 images/
 notebooks/
 models/
@@ -14,3 +14,4 @@ wandb/
 outputs/
 backup_data/
 shared/temp_files/
+.vscode
