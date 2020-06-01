@@ -1,0 +1,7 @@
+models: ["model_150"]
+run_names: ["test_1", "test_2", "test_3"]
+threshold:
+  IoU: 0.4
+  pixel_acc: 0.4
+  precision: 0.4
+  recall: 0.4
