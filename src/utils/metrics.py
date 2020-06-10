@@ -26,7 +26,7 @@ def recall(pred, true, label=1):
 
     try:
         return tp / (tp + fn)
-    except:
+    except Exception as e:
         return 0
 
 
@@ -46,8 +46,10 @@ def IoU(pred, true, label=1):
     tp = ((pred == label) & (true == label)).sum().item()
     fp = ((pred == label) & (true != label)).sum().item()
     fn = ((pred != label) & (true == label)).sum().item()
-
-    return tp / (tp + fp + fn)
+    try:
+        return tp / (tp + fp + fn)
+    except Exception as e:
+        return 0
 
 
 class diceloss(torch.nn.Module):
