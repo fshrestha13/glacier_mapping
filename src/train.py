@@ -139,8 +139,11 @@ if __name__ == "__main__":
     writer.add_image("Validation/image", val_img_grid)
     writer.add_image("Validation/labels", val_label_grid)
 
-      # Saving json model file for the tool
+    # Saving json model file for the tool
     tool_dir = f"{data_dir}/runs/{args.run_name}/tool_files/"
+    if not os.path.exists(tool_dir):
+        os.mkdir(tool_dir)
+
     num_params = get_num_params(frame.model)
 
     tool_dict = {
@@ -163,7 +166,7 @@ if __name__ == "__main__":
         }
     }
 
-    tool_json = json.dumps(tool_dict, indent=4)
+    tool_json = json.dumps(str(tool_dict), indent=4)
 
     with open(tool_dir + "model.json", "w") as model_tool:
         model_tool.write(tool_json)
