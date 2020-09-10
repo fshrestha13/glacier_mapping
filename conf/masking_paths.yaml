@@ -1,5 +1,5 @@
 mask_1:
   img_path: /content/drive/My Drive/sample_data/demo_ICIMOD_2015_train_2-0000000000-0000008960.tif
   mask_paths:
-    - /content/drive/My Drive/sample_data/shp/debris.shp
-    - /content/drive/My Drive/sample_data/shp/Glacier_2005.shp
+    - /content/drive/My Drive/sample_data/debris.shp
+    - /content/drive/My Drive/sample_data/Glacier_2005.shp
